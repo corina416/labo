@@ -19,7 +19,7 @@ setwd("~/buckets/b1/")   #Establezco el Working Directory
 
 
 kprefijo       <- "KA741"
-ksemilla_azar  <- 102191  #Aqui poner la propia semilla
+ksemilla_azar  <- 100003  #Aqui poner la propia semilla
 kdataset       <- "./datasets/paquete_premium_ext_721.csv.gz"
 
 #donde entrenar
@@ -31,11 +31,11 @@ kfinal_meses_malos  <- c( 202006 )   #meses a excluir del entrenamiento
 #aqui copiar a mano lo menor de la Bayesian Optimization
 # si es de IT y le gusta automatizar todo, no proteste, ya llegara con MLOps
 kmax_bin           <-    31
-klearning_rate     <-     0.0131094708
-knum_iterations    <-   951
-knum_leaves        <-  1002
-kmin_data_in_leaf  <- 16918
-kfeature_fraction  <-     0.5609450635
+klearning_rate     <-     0.0101077121418712
+knum_iterations    <-   1199
+knum_leaves        <-  2047
+kmin_data_in_leaf  <- 11349
+kfeature_fraction  <-     0.429729261641438
 
 
 
@@ -80,9 +80,9 @@ dataset[ foto_mes >= kfinal_mes_desde &
 #creo las carpetas donde van los resultados
 #creo la carpeta donde va el experimento
 # HT  representa  Hiperparameter Tuning
-dir.create( "./exp/",  showWarnings = FALSE ) 
-dir.create( paste0("./exp/", kexperimento, "/" ), showWarnings = FALSE )
-setwd( paste0("./exp/", kexperimento, "/" ) )   #Establezco el Working Directory DEL EXPERIMENTO
+dir.create( "./exp/sinCambiarNada/itera53/",  showWarnings = FALSE ) 
+dir.create( paste0("./exp/sinCambiarNada/itera53/", kexperimento, "/" ), showWarnings = FALSE )
+setwd( paste0("./exp/sinCambiarNada/itera53/", kexperimento, "/" ) )   #Establezco el Working Directory DEL EXPERIMENTO
 
 
 
