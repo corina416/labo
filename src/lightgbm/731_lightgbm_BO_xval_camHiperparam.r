@@ -190,9 +190,9 @@ dataset  <- fread( kdataset )
 
 #creo la carpeta donde va el experimento
 # HT  representa  Hiperparameter Tuning
-dir.create( "./exp/sinCambiarNada/",  showWarnings = FALSE ) 
-dir.create( paste0("./exp/sinCambiarNada/", kexperimento, "/" ), showWarnings = FALSE )
-setwd( paste0("./exp/sinCambiarNada/", kexperimento, "/" ) )   #Establezco el Working Directory DEL EXPERIMENTO
+dir.create( "./exp/cambioHiperparam/",  showWarnings = FALSE ) 
+dir.create( paste0("./exp/cambioHiperparam/", kexperimento, "/" ), showWarnings = FALSE )
+setwd( paste0("./exp/cambioHiperparam/", kexperimento, "/" ) )   #Establezco el Working Directory DEL EXPERIMENTO
 
 
 
