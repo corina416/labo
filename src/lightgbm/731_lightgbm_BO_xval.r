@@ -29,7 +29,7 @@ kBO_iter  <- 100   #cantidad de iteraciones de la Optimizacion Bayesiana
 hs <- makeParamSet( 
          makeNumericParam("learning_rate",    lower=  0.01 , upper=     0.3),
          makeNumericParam("feature_fraction", lower=  0.2  , upper=     1.0),
-         makeIntegerParam("min_data_in_leaf", lower=  1    , upper= 20000),
+         makeIntegerParam("min_data_in_leaf", lower=  10000    , upper= 100000),
          makeIntegerParam("num_leaves",       lower= 16L   , upper=  2048),
          makeNumericParam("prob_corte",       lower= 1/120 , upper=  1/20)  #esto sera visto en clase en gran detalle
         )
@@ -37,7 +37,7 @@ hs <- makeParamSet(
 
 kprefijo       <- "HT731"
 ksemilla_azar  <- 100003  #Aqui poner la propia semilla
-kdataset       <- "./datasets/paquete_premium_ext_721.csv.gz"
+kdataset       <- "./datasets/paquete_premium_ext_722.csv.gz"
 
 #donde entrenar
 ktrain_mes_desde    <- 201912        #mes desde donde entreno
