@@ -33,7 +33,7 @@ param:
     correr:    [  TRUE,  TRUE, TRUE, TRUE, TRUE, TRUE ]  #si se corre el lag
     lag:       [     1,     2,    3,    4,    5,    6 ]  #orden del lag
     delta:     [  TRUE,  TRUE, TRUE, TRUE, TRUE, TRUE ]  #solo se activa si correr=TRUE 
-    canaritos: [   0.0,   0.0,  0.0,  0.0,  0.0,  0.0 ]  #porcentaje de canaritos asesinos, del total de columnas del dataset, 0 indica NO reducir campos por canaritos
+    canaritos: [   0.2,   0.0,  0.2,  0.0,  0.2,  0.0 ]  #porcentaje de canaritos asesinos, del total de columnas del dataset, 0 indica NO reducir campos por canaritos
 
 
   tendenciaYmuchomas:  #todos FALSE
@@ -45,7 +45,7 @@ param:
     promedio:  [  TRUE,  TRUE,  TRUE,  TRUE ]   #promedio de la ventana
     ratioavg:  [  TRUE,  TRUE,  TRUE,  TRUE ]   #valor sobre el promedio de la ventana
     ratiomax:  [  TRUE,  TRUE,  TRUE,  TRUE ]   #valor sobre el maximo de la ventana
-    canaritos: [   0.0,   0.0,   0.0,   0.0 ]   #porcentaje de canaritos asesinos, del total de columnas del dataset, 0 indica NO reducir campos por canaritos
+    canaritos: [   0.2,   0.0,   0.2,   0.0 ]   #porcentaje de canaritos asesinos, del total de columnas del dataset, 0 indica NO reducir campos por canaritos
 
 
   tony:  FALSE
