@@ -7,7 +7,7 @@ googlecloud:
 
 
 experiment:
-  script: "src/completo/z971_HB_hibridacion.r"
+  script: "src/completo/z912_FE_UTN.r"
   restart: FALSE
   name: "exp"
   type: "FeatureEngineering"
@@ -50,7 +50,7 @@ param:
 
   tony:  FALSE
 
-  rankeador: FALSE
+  rankeador: TRUE
 
   canaritos_final: 0.2   #si es CERO entonces no hace el filtrado final por canaritos
 
