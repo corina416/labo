@@ -10,7 +10,7 @@ experiment:
   name: "exp"
   type: "TrainingStrategy"
   tags: [ "austero", "undersampling10" ]
-  requires: [ "8134FEa" ]
+  requires: [ "8136FEa" ]
 
 
 param:
