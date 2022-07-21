@@ -36,7 +36,7 @@ param:
     canaritos: [   0.1,   0.1,   0.0,   0.0,   0.0,   0.0 ]  #porcentaje de canaritos asesinos, del total de columnas del dataset, 0 indica NO reducir campos por canaritos
 
 
-  tendenciaYmuchomas:  #todos TRUE
+  tendenciaYmuchomas:  #todos FALSE
     correr:    [  TRUE, FALSE, FALSE, FALSE ]   #tendencias a correr, es lo que controla y se impone al resto
     ventana:   [     6,     3,     9,    12 ]   #tamaño de la ventana, solo se corren las que dicen  correr=TRUE
     tendencia: [  TRUE,  TRUE,  TRUE,  TRUE ]   #pendiente de la recta ajustada por cuadrados minimos
