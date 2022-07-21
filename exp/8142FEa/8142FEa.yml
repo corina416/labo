@@ -48,7 +48,7 @@ param:
     canaritos: [   0.3,   0.0,   0.0,   0.0  ]   #porcentaje de canaritos asesinos, del total de columnas del dataset, 0 indica NO reducir campos por canaritos
 
 
-  tony:  FALSE
+  tony:  TRUE
 
   rankeador: FALSE
 
