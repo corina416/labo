@@ -97,7 +97,7 @@ dataset[  , .N,  cluster2 ]  #tamaño de los clusters
 
 #grabo el dataset en el bucket, luego debe bajarse a la PC y analizarse
 fwrite( dataset,
-        file= "cluster_de_bajas.txt",
+        file= "cluster_de_bajas8134a.txt",
         sep= "\t" )
 
 
