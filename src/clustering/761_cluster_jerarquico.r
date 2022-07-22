@@ -17,10 +17,10 @@ require("randomForest")
 require("ranger")
 
 
-setwd( "~/buckets/b1/" )  #cambiar por la carpeta local
+setwd( "gs://bukalar/exp/8134FEa/" )  #cambiar por la carpeta local
 
 #leo el dataset
-dataset  <- fread( "./datasets/paquete_premium.csv.gz", stringsAsFactors= TRUE)
+dataset  <- fread( "./paquete_premium_ext.csv.gz", stringsAsFactors= TRUE)
 
 #me quedo SOLO con los BAJA+2
 dataset  <- dataset[  clase_ternaria =="BAJA+2"  & foto_mes>=202003  & foto_mes<=202011 & foto_mes!=202006, ]
@@ -32,17 +32,20 @@ dataset  <- na.roughfix( dataset )
 
 #los campos que arbitrariamente decido considerar para el clustering
 #por supuesto, se pueden cambiar
-campos_buenos  <- c( "mdescubierto_preacordado_delta3", "ctrx_quarter_rank", "mprestamos_personales_ratioavg6	", 
-                     "rf_011_101", "mcaja_ahorro_ratiomax12",
-                     "rf_014_108", "rf_034_091", "rf_043_093", "mtarjeta_visa_consumo", "cproductos_ratioavg6",
-                     "mprestamos_personales_lag4", "mprestamos_personales_ratioavg9", "rf_050_071", "cproductos_ratioavg12", 
-                     "rf_021_110",
-                     "rf_017_101", "mcuentas_saldo_delta2", "ccallcenter_trx_ratioavg12", "mpayroll", "rf_058_114",
-                     "foto_mes", "rf_021_140", "mdescubierto_preacordado_tend6", "rf_010_100",
-                     "cpayroll_trx_ratioavg6", "mpayroll_delta5", "mrentabilidad_avg9", "ccomisiones_mantenimiento_ratioavg9",
-                     "mcuentas_saldo_ratiomax3", "thomebanking_ratioavg9", "Visa_fechaalta_tend3", "rf_015_103", "rf_013_116",
-                     "mcomisiones_mantenimiento_delta6", "Visa_Finiciomora", "mcuentas_saldo_rank", "rf_051_108", "mactivos_margen_min3",
-                     "rf_047_152")
+campos_buenos  <- c( "ctrx_quarter_rank", "ctrx_quarter", "mtarjeta_visa_consumo_rank", 
+                     "mcaja_ahorro_rank", "ctrx_quarter_ratioavg12",
+                     "mcaja_ahorro", "mtarjeta_visa_consumo", "ctrx_quarter_ratiomax12", "mcuentas_saldo_rank", 
+                     "mtarjeta_visa_consumo_min3","mcaja_ahorro_avg3", "cpayroll_trx", "cproductos_ratioavg6", 
+                     "ctarjeta_visa_trx_ratioavg12","ctarjeta_visa_trx_ratiomax12",
+                     "mtarjeta_visa_consumo_ratioavg12", "mdescubierto_preacordado_ratioavg9", 
+                     "ctarjeta_visa_ratioavg6", "ctrx_quarter_lag6", "ctarjeta_visa_trx",
+                     "mpasivos_margen", "cproductos_ratioavg9", "mdescubierto_preacordado_tend6", "mcuentas_saldo",
+                     "cpayroll_trx_min3", "mcuenta_corriente_delta6", "mpasivos_margen_avg6", "mpayroll_rank",
+                     "mprestamos_personales_ratioavg6", "mdescubierto_preacordado_ratioavg12", "mprestamos_personales_ratioavg12",
+                     "mprestamos_personales_ratiomax12", "cproductos_ratioavg12",
+                     "mcomisiones_mantenimiento_ratioavg12", "mdescubierto_preacordado_delta4", "mpayroll", "cpayroll_trx_ratioavg6", 
+                     "mcaja_ahorro_ratioavg12",
+                     "mdescubierto_preacordado_tend3")
 
 
 
