@@ -15,6 +15,7 @@ gc()             #garbage collection
 require("data.table")
 require("randomForest")
 require("ranger")
+require("base")
 
 
 setwd( "~/buckets/b1/exp/8134FEa" )  #cambiar por la carpeta local
