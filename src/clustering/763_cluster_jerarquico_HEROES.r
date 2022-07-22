@@ -20,7 +20,7 @@ require("ranger")
 setwd( "~/buckets/b1/exp/8134FEa" ) #cambiar por la carpeta local
 
 #leo el dataset
-dataset  <- fread( "./datasets/paquete_premium.csv.gz", stringsAsFactors= TRUE)
+dataset  <- fread( "./paquete_premium_ext.csv.gz", stringsAsFactors= TRUE)
 
 #me quedo SOLO con los BAJA+2
 dataset  <- dataset[  clase_ternaria =="BAJA+2"  & foto_mes>=202001  & foto_mes<=202011 & foto_mes!=202006, ]
