@@ -17,7 +17,7 @@ require("randomForest")
 require("ranger")
 
 
-setwd( "gs://bukalar/exp/8134FEa/" )  #cambiar por la carpeta local
+setwd( "~/bukalar/exp/8134FEa/" )  #cambiar por la carpeta local
 
 #leo el dataset
 dataset  <- fread( "./paquete_premium_ext.csv.gz", stringsAsFactors= TRUE)
