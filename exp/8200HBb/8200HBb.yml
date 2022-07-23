@@ -13,7 +13,7 @@ experiment:
   type: "hybridisation"
   tags: [ "hybrid" ]
   description: "Hibridacion de ZZ"
-  requires:   [ "8139ZZf", "8141ZZb", "8143ZZb" ]  
+  requires:   [ "8139ZZf", "8141ZZb", "8143ZZb", "8145ZZb"  ]  
 
 param:
   KA_start:  9000
