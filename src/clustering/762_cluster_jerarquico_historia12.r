@@ -33,7 +33,7 @@ setorderv( dataset12, c("numero_de_cliente", "foto_mes"), c(1,-1) )
 dataset12[  , pos := seq(.N) , numero_de_cliente ]
 
 #me quedo solo con los 12 meses antes de morir
-dataset12  <- dataset12[  pos <= 12 , ]
+dataset12  <- dataset12[  pos <= 12 & pos != 6 , ]
 gc()
 
 
