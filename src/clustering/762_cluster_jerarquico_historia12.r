@@ -118,6 +118,13 @@ dataset[  , mean(mcuentas_saldo),  cluster2 ]
 dataset[  , mean(chomebanking_trx),  cluster2 ]
 
 
+cat("viendo media de cada variable")
+for(i in 0:length(campos_buenos)){
+  cat('dataset[  , mean(',campos_buenos[i],'),  cluster2 ]')
+  cat('\n')
+}
+
+
 #Finalmente grabo el archivo para  Juan Pablo Cadaveira
 #agrego a dataset12 el cluster2  y lo grabo
 
